@@ -1,7 +1,7 @@
 const buildMessage = (channel, text, optional = {}) => {
   const message = {
     channel,
-    text.replace('\\\\n', '\\n').replace('\\\\t', '\\t')
+    text
   };
 
   Object.keys(optional).forEach(name => {
