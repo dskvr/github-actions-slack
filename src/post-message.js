@@ -21,7 +21,7 @@ const post = (token, message) => {
 
     payload = payload.replace('\\\\n', '\\n').replace('\\\\t', '\\t')
     
-    console.log("DEBUG: Payload", payload);
+    console.log("DEBUG wtf: Payload wtf", payload);
     
     const options = getOptions(token);
 
