@@ -15,7 +15,7 @@ const getOptions = (token) => {
 
 const post = (token, message) => {
   return new Promise((resolve, reject) => {
-    const payload = JSON.stringify(message);
+    const payload = JSON.stringify(message).replace('\\\\n', '\\n').replace('\\\\t', '\\t');
 
     console.log("DEBUG: Payload", payload);
 
