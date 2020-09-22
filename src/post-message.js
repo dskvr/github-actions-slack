@@ -19,6 +19,8 @@ const post = (token, message) => {
 
     console.log("DEBUG: Payload", payload);
 
+    payload = payload.replace('\\\\n', '\\n').replace('\\\\t', '\\t')
+    
     const options = getOptions(token);
 
     const req = https.request(options, (res) => {
